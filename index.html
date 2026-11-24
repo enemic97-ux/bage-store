@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e9">
+  <meta name="description" content="BAGÉ — премиальные женские сумки в Казахстане. Заказ через WhatsApp, доставка по Казахстану.">
+  <title>BAGÉ — The Art of Everyday Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement" data-i18n="announcement">Доставка по всему Казахстану · Заказы через WhatsApp</div>
+  <header class="header">
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">☰</button>
+    <a class="wordmark" href="#home" aria-label="BAGÉ home">BAGÉ</a>
+    <nav class="nav" id="nav">
+      <a href="#catalog" data-i18n="navCatalog">Коллекция</a>
+      <a href="#about" data-i18n="navAbout">О бренде</a>
+      <a href="#delivery" data-i18n="navDelivery">Доставка</a>
+      <a href="#contacts" data-i18n="navContacts">Контакты</a>
+    </nav>
+    <div class="header-actions">
+      <button class="lang-switch" id="langToggle" aria-label="Change language">ҚАЗ</button>
+      <button class="cart-button" id="cartOpen"><span data-i18n="cart">Корзина</span><span class="cart-count" id="cartCount">0</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroEyebrow">THE NEW COLLECTION · 2026</p>
+        <h1 data-i18n="heroTitle">Элегантность<br>в каждой детали.</h1>
+        <p class="hero-copy" data-i18n="heroCopy">Сумки в современном премиальном стиле — для вашего ритма и индивидуальности.</p>
+        <a class="button button-dark" href="#catalog" data-i18n="heroButton">Смотреть коллекцию</a>
+      </div>
+      <div class="hero-note">BAGÉ — EVERYDAY ELEGANCE</div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow" data-i18n="introEyebrow">LESS, BUT BETTER</p>
+      <h2 data-i18n="introTitle">Выразительный стиль.<br>Ничего лишнего.</h2>
+      <p data-i18n="introCopy">Мы отбираем модели с продуманным силуэтом, спокойной палитрой и вниманием к деталям.</p>
+    </section>
+
+    <section class="catalog section-wrap" id="catalog">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="catalogEyebrow">BAGÉ SELECTION</p>
+          <h2 data-i18n="catalogTitle">Коллекция</h2>
+        </div>
+        <p class="muted" data-i18n="catalogSub">Избранные модели сезона</p>
+      </div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all" data-i18n="filterAll">Все</button>
+        <button class="filter" data-filter="classic" data-i18n="filterClassic">Классические</button>
+        <button class="filter" data-filter="everyday" data-i18n="filterEveryday">На каждый день</button>
+        <button class="filter" data-filter="evening" data-i18n="filterEvening">Вечерние</button>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="brand-story" id="about">
+      <div class="story-image"></div>
+      <div class="story-content">
+        <p class="eyebrow" data-i18n="storyEyebrow">ABOUT BAGÉ</p>
+        <h2 data-i18n="storyTitle">Красота —<br>в простоте.</h2>
+        <p data-i18n="storyCopy">BAGÉ — независимый магазин сумок в премиальном дизайнерском стиле. Мы выбираем модели без чужих логотипов, уделяя внимание форме, материалам и деталям.</p>
+        <a class="text-link" href="#contacts" data-i18n="storyLink">Связаться с нами ↗</a>
+      </div>
+    </section>
+
+    <section class="values section-wrap">
+      <div class="value"><span>01</span><h3 data-i18n="value1Title">Продуманный выбор</h3><p data-i18n="value1Copy">Модели, которые легко вписываются в гардероб.</p></div>
+      <div class="value"><span>02</span><h3 data-i18n="value2Title">Честное описание</h3><p data-i18n="value2Copy">Указываем реальные материалы и характеристики.</p></div>
+      <div class="value"><span>03</span><h3 data-i18n="value3Title">Доставка по Казахстану</h3><p data-i18n="value3Copy">Отправляем заказы в города Казахстана.</p></div>
+    </section>
+
+    <section class="delivery" id="delivery">
+      <div class="delivery-inner">
+        <p class="eyebrow" data-i18n="deliveryEyebrow">MADE SIMPLE</p>
+        <h2 data-i18n="deliveryTitle">Ваша BAGÉ —<br>в вашем городе.</h2>
+        <p data-i18n="deliveryCopy">Оформите заказ через WhatsApp. Мы подтвердим наличие, согласуем доставку и сообщим итоговую стоимость.</p>
+        <a class="button button-light" href="https://wa.me/77077767679" target="_blank" rel="noopener" data-i18n="deliveryButton">Написать в WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="footer-top">
+      <div><a class="wordmark footer-logo" href="#home">BAGÉ</a><p class="footer-tagline">THE ART OF EVERYDAY ELEGANCE</p></div>
+      <div class="footer-links"><a href="#catalog" data-i18n="navCatalog">Коллекция</a><a href="#delivery" data-i18n="navDelivery">Доставка</a><a href="https://wa.me/77077767679" target="_blank" rel="noopener">WhatsApp</a><a href="#" id="instagramLink">Instagram</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> BAGÉ</span><span data-i18n="footerNote">Цены указаны в тенге · Казахстан</span></div>
+  </footer>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Cart">
+    <div class="drawer-head"><h2 data-i18n="cartTitle">Ваш заказ</h2><button id="cartClose" class="close-button" aria-label="Close">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span data-i18n="total">Итого</span><strong id="cartTotal">0 ₸</strong></div>
+    <form id="orderForm" class="order-form">
+      <label><span data-i18n="nameLabel">Ваше имя</span><input id="customerName" required placeholder="Имя"></label>
+      <label><span data-i18n="cityLabel">Город</span><input id="customerCity" required placeholder="Астана"></label>
+      <label><span data-i18n="phoneLabel">Телефон</span><input id="customerPhone" required type="tel" placeholder="+7"></label>
+      <button class="button button-dark full" type="submit" data-i18n="orderButton">Оформить через WhatsApp</button>
+      <p class="form-note" data-i18n="formNote">Нажимая кнопку, вы перейдёте в WhatsApp с подготовленным сообщением. Заказ считается подтверждённым после ответа менеджера.</p>
+    </form>
+  </aside>
+  <script src="script.js"></script>
+</body>
+</html>
